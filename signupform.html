@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="signupform.css">
+</head>
+<body>
+    <div class=content> 
+        <form>
+            <div class="uppercase">
+                <label for=Name>First Name:</label>
+                <input type=textbox id="name" name="name">
+                <label for=Name>last Name:</label>
+                <input type=textbox id="name" name="name">
+            </div>
+            <br>
+            <br>
+            
+            <label for=Birthday>Birthday:</label>
+            <input type="date" id="Birthday" name="Birthday">
+            
+            <br>
+            <br>
+            
+            <label for="Phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+            
+            <br>
+            <br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[@-.]"required>
+            
+            <br>
+            <br>
+            
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            
+            <br>
+            <br>
+            
+            <button>submit</button>
+        </form>
+    </div>
+    </body>
+</html>
